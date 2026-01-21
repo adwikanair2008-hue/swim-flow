@@ -1,0 +1,7 @@
+{
+  "name": "SwimFlow",
+  "description": "A clean, friendly swimming performance and wellness tracker with AI coaching for athletes.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
