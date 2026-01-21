@@ -1,102 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SwimFlow - Performance & Wellness</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- iOS Specific Meta Tags for Standalone "App" Mode -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="SwimFlow">
-    <link rel="apple-touch-icon" href="https://img.icons8.com/color/512/swimming.png">
-    
-    <!-- Theme & Branding -->
-    <meta name="theme-color" content="#f0f9ff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --sat: env(safe-area-inset-top);
-            --sar: env(safe-area-inset-right);
-            --sab: env(safe-area-inset-bottom);
-            --sal: env(safe-area-inset-left);
-        }
-        
-        * {
-            -webkit-tap-highlight-color: transparent;
-            box-sizing: border-box;
-        }
+  </head>
 
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f0f9ff;
-            user-select: none;
-            -webkit-user-select: none;
-            
-            /* Native App Behavior Fixes */
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden; 
-            
-            /* Prevent pull-to-refresh and system overscroll glow */
-            overscroll-behavior-y: none;
-            overscroll-behavior-x: none;
-            
-            /* Modern touch handling */
-            touch-action: manipulation;
-        }
-
-        #root {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .safe-top { padding-top: var(--sat); }
-        .safe-bottom { padding-bottom: var(--sab); }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-
-        img, a {
-            -webkit-touch-callout: none;
-        }
-
-        .page-transition {
-            animation: slideUp 0.3s ease-out;
-            height: 100%;
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(10px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
-<script type="importmap">
-{
-  "imports": {
-    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
-    "recharts": "https://esm.sh/recharts@^3.6.0"
-  }
-}
-</script>
-</head>
-<body>
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-</body>
+  </body>
 </html>
